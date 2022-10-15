@@ -37,7 +37,7 @@ public class Main {
 		}
 		
 		System.out.println(myObj.getAverage());
-		System.out.println(myObj.Qualifications());
+		System.out.println(myObj.Qualification());
 		
 	  }
 }
