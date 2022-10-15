@@ -1,0 +1,41 @@
+package main;
+
+public class Person{
+	
+	private double sum = 0;
+	private double avg  = 0;
+	
+	//Calculate Average: Using getters and setters method
+	public double getAverage() 
+	{
+		System.out.print("Average Grade:");
+		return avg;
+	}
+	
+	public void setAverage(double x) 
+	{
+		sum += x;
+		avg = sum  / 5;
+	}
+	
+	public String StudentName(String name)
+	{		
+		return ("\nStudent Name: " + name);
+	}
+	
+	public int Qualifications()
+	{
+		
+		if(avg < 75) 
+		{	
+			System.out.println("You Have Failed This Time");	
+		}
+		
+		else
+		{
+			System.out.println("Congratulations! Proceed to the next level");
+		}
+		return 0;
+	}
+}
+	
