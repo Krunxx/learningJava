@@ -7,37 +7,33 @@ public class Main {
 	public static void main(String args[])
 	  {
 		
-		Scanner sc = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 		
-		Student myObj = new Student();
+		Student student = new Student();
 		
 		System.out.println("Enter Student Name: ");
-		String name = sc.nextLine();
+		String name = scan.nextLine();
 		
-		int[] grade = new int[5];
-		
-		System.out.println("Enter five subject");
-		for(int i = 0; i < grade.length; i++)
+		double[] grades = new double[5];
+
+		System.out.println("Enter five grades");
+		for(int i = 0; i < grades.length; i++)
 		{
-			grade[i] = sc.nextInt();
-			myObj.setAverage(grade[i]);
-			
+			grades[i] = scan.nextDouble();
+			student.setAverage(grades[i]);
 		}
 		
 		//Output
-		System.out.println(myObj.StudentName(name));
+		System.out.println(student.StudentName(name));
+		System.out.print("Student Grade: ");
 		
-		for(int i = 0; i < grade.length;) {
-			
-			for(int j = 1; j <= 5; j++) {
-				
-				System.out.println("Subject "+  j + " : " + grade[i]);
-				
-			}break;
+		for(int k = 0; k < grades.length; k++)
+		{	
+			System.out.print("| " + grades[k] + " |");
 		}
 		
-		System.out.println(myObj.getAverage());
-		System.out.println(myObj.Qualification());
+		System.out.println(student.getAverage());
+		System.out.println(student.Qualification());
 		
 	  }
 }
