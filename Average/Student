@@ -8,7 +8,7 @@ public class Person{
 	//Calculate Average: Using getters and setters method
 	public double getAverage() 
 	{
-		System.out.print("Average Grade:");
+		System.out.print("\nAverage:");
 		return avg;
 	}
 	
