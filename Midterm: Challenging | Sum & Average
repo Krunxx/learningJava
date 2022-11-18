@@ -1,0 +1,47 @@
+package Practice;
+import java.util.*;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc  = new Scanner(System.in);
+		
+		/* 
+		 * Another yet simple of declaring Array is
+		 * 
+		 * System.out.print("Enter number of elements: ");
+		 * number_Of_Elements = sc.nextInt();
+		 * 
+		 * int[] numArray = new int[number_of_Elements];
+ 		 */
+		
+		//But this is what I did during in Midterm Laboratory Exam
+		
+		int[] number_Of_Arrays = {};
+		int sum =0, avg = 0;
+		
+		//Asking for the user of their desire number of elements
+		System.out.print("Enter number of elements: ");
+		number_Of_Arrays = new int[sc.nextInt()];
+		
+		/* 
+		 * Purpose
+		 * 1. Expand the number of Arrays in order to fill the elements
+		 * 2. Calculate the sum of inserted elements
+		 * 3. Calculate the average through dividing it the sum and the size of Array 
+		 */
+		for(int i=0; i < number_Of_Arrays.length; i++) 
+		{	
+			System.out.print("Enter number: ");
+			int num = sc.nextInt();
+			sum += num;
+			avg = sum / number_Of_Arrays.length;
+		}
+		sc.close(); //Close the Scanner
+		
+		//Display output
+		System.out.println("The sum of Arrays: " + sum);
+		System.out.println("The average of Arrays: " + avg);
+	}
+}
