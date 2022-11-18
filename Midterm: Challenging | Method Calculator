@@ -1,0 +1,110 @@
+package Practice;
+import java.util.*;
+
+public class Main {
+	
+	public int sum = 0;
+	
+	public void Add(int x, int y)
+	{
+		sum = x + y;	
+	}
+	
+	public void Subtract(int x, int y)
+	{
+		sum = x - y;	
+	}
+	
+	public void Multiply(int x, int y)
+	{
+		sum = x * y;	
+	}
+	
+	public void Divide(int x, int y)
+	{
+		sum = x / y;	
+	}
+	
+	public void Remainder(int x, int y)
+	{
+		sum = x % y;	
+	}
+	
+	public int Sum() 
+	{
+		return sum;
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		char choice;
+		
+		System.out.println("Choose operator:\na)Addition\nb)Subtraction\nc)Multiplication\nd)Divide\ne)Remainder");
+		choice = sc.next().toUpperCase().charAt(0);
+		
+		Main calculate = new Main();
+		
+		switch(choice) {
+		
+		case 'A':
+			
+			System.out.println("Enter first number");
+			int num1 = sc.nextInt();
+			System.out.println("Enter second number");
+			int num2 = sc.nextInt();
+			
+			calculate.Add(num1, num2);
+			System.out.println("Sum: " + calculate.sum);
+			break;
+		
+		case 'B':
+			
+			System.out.println("Enter first number");
+			int num3 = sc.nextInt();
+			System.out.println("Enter second number");
+			int num4 = sc.nextInt();
+			
+			calculate.Subtract(num3, num4);
+			System.out.println("Sum: " + calculate.sum);
+			break;
+		
+		case 'C':
+			
+			System.out.println("Enter first number");
+			int num5 = sc.nextInt();
+			System.out.println("Enter second number");
+			int num6 = sc.nextInt();
+			
+			calculate.Multiply(num5, num6);
+			System.out.println("Sum: " + calculate.sum);
+			break;
+			
+		case 'D':
+			
+			System.out.println("Enter first number");
+			int num7 = sc.nextInt();
+			System.out.println("Enter second number");
+			int num8 = sc.nextInt();
+			
+			calculate.Divide(num7, num8);
+			System.out.println("Sum: " + calculate.sum);
+			break;
+			
+		case 'E':
+			
+			System.out.println("Enter first number");
+			int num9 = sc.nextInt();
+			System.out.println("Enter second number");
+			int num10 = sc.nextInt();
+			
+			calculate.Remainder(num9, num10);
+			System.out.println("Sum: " + calculate.sum);
+			break;
+		
+		default:
+			
+			System.out.println("Invalid Input");
+		}
+	}
+}
