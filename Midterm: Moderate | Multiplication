@@ -17,7 +17,7 @@ public class Main {
 		
 		//Purpose: Display the Multiplying input
 		for(int i=1; i <= 10; i++)
-    {	
+		{	
 			sum = num * i;
 			System.out.println(num + " * " + i + " = " + sum);
 		}
