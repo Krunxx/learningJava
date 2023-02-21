@@ -19,3 +19,56 @@
    </div>
 </body>
 </html>
+
+body *{
+    display: flex;
+}
+
+.borderstyle1{
+    border: 2px solid #000;
+    flex-grow: 1;
+    margin: 5px;
+    flex-direction: column;
+}
+
+.borderstyle2{
+    border: 2px solid #000;
+    flex-grow: 1;
+    margin: 5px;
+    align-items: end;
+    flex-direction: column;
+}
+
+.borderstyle3{
+    border: 2px solid #000;
+    flex-grow: 1;
+    margin: 5px;
+    align-items: start;
+    flex-direction:
+}
+.sidebar{
+    width: 300px;
+    height: 760px;
+    float: left;
+}
+
+header{
+height: 100px;
+}
+
+#content-are{
+    height: 90vh;
+}
+
+#content-area aside{
+    flex-grow: 1;
+}
+
+#content-area aside{
+    flex-grow: 4;
+}
+
+footer{
+   height:100px; 
+}
+
